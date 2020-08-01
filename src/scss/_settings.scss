@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    min-width: 100%;
+    //object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.container {
+    min-width: 1200px;
+    padding: 0px 20px;
+    margin: 0px auto;
+}
