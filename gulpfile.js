@@ -28,8 +28,8 @@ const FORMAT_FONTS = () => {
 		.pipe(TTF_2_WOFF_2())
 		.pipe(dest('./app/fonts/'))
 }
-
-const cb = () => {}
+/*
+const CB = () => {}
 
 let srcFonts = './src/scss/_fonts.scss';
 let appFonts = './app/fonts/';
@@ -37,7 +37,7 @@ let appFonts = './app/fonts/';
 const MAKE_FONT_STYLES = (done) => {
 	let file_content = FS.readFileSync(srcFonts);
 
-	FS.writeFile(srcFonts, '', cb);
+	FS.writeFile(srcFonts, '', CB);
 	FS.readdir(appFonts, function (err, items) {
 		if (items) {
 			let c_fontname;
@@ -45,7 +45,7 @@ const MAKE_FONT_STYLES = (done) => {
 				let fontname = items[i].split('.');
 				fontname = fontname[0];
 				if (c_fontname != fontname) {
-					FS.appendFile(srcFonts, '@include font-face("' + fontname + '", "' + fontname + '", 400);\r\n', cb);
+					FS.appendFile(srcFonts, '@include font-face("' + fontname + '", "' + fontname + '", 400);\r\n', CB);
 				}
 				c_fontname = fontname;
 			}
@@ -53,7 +53,7 @@ const MAKE_FONT_STYLES = (done) => {
 	})
 
 	done();
-}
+} */
 
 const MAKE_SVG_SPRITE = () => {
 	return src('./src/img/**/*.svg')
@@ -175,7 +175,7 @@ const WATCH_FILES = () => {
 	watch('./src/img/**.svg', MAKE_SVG_SPRITE);
 	watch('./src/resources/**', ADDITIONAL_FILES_TO_APP);
 	watch('./src/fonts/**.ttf', FORMAT_FONTS);
-	watch('./src/fonts/**.ttf', MAKE_FONT_STYLES);
+	/* watch('./src/fonts/**.ttf', MAKE_FONT_STYLES); */
 	watch('./src/js/**/*.js', CONVERT_SCRIPTS_TO_APP);
 }
 
@@ -183,7 +183,7 @@ exports.styles = MAKE_STYLES;
 exports.watchFiles = WATCH_FILES;
 exports.fileinclude = HTML_INCLUDE;
 
-exports.default = series(DELETE_APP, parallel(HTML_INCLUDE, CONVERT_SCRIPTS_TO_APP, FORMAT_FONTS, ADDITIONAL_FILES_TO_APP, IMG_TO_APP, CONVERT_WEBP, MAKE_SVG_SPRITE), MAKE_FONT_STYLES, MAKE_STYLES, WATCH_FILES);
+exports.default = series(DELETE_APP, parallel(HTML_INCLUDE, CONVERT_SCRIPTS_TO_APP, FORMAT_FONTS, ADDITIONAL_FILES_TO_APP, IMG_TO_APP, CONVERT_WEBP, MAKE_SVG_SPRITE), /*MAKE_FONT_STYLES,*/ MAKE_STYLES, WATCH_FILES);
 
 
 // const tinypng = () => {
@@ -240,5 +240,5 @@ const SCRIPTS_BUILD = () => {
 		.pipe(dest('./app/js'))
 }
 
-exports.build = series(DELETE_APP, parallel(HTML_INCLUDE, SCRIPTS_BUILD, FORMAT_FONTS, ADDITIONAL_FILES_TO_APP, IMG_TO_APP, CONVERT_WEBP, MAKE_SVG_SPRITE), MAKE_FONT_STYLES, STYLE_BUILD, /*tinypng*/);
+exports.build = series(DELETE_APP, parallel(HTML_INCLUDE, SCRIPTS_BUILD, FORMAT_FONTS, ADDITIONAL_FILES_TO_APP, IMG_TO_APP, CONVERT_WEBP, MAKE_SVG_SPRITE), /*MAKE_FONT_STYLES,*/ STYLE_BUILD, /*tinypng*/);
 

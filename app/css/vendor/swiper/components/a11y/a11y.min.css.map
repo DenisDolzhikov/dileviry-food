@@ -1,0 +1,1 @@
+{"version":3,"sources":["vendor/swiper/components/a11y/a11y.min.css"],"names":[],"mappings":"AACA,uCACE,SAAA,SACA,KAAA,EACA,IAAA,EACA,eAAA,KACA,QAAA,EACA,QAAA","file":"a11y.min.css","sourcesContent":["/* a11y */\n.swiper-container .swiper-notification {\n  position: absolute;\n  left: 0;\n  top: 0;\n  pointer-events: none;\n  opacity: 0;\n  z-index: -1000;\n}\n"]}

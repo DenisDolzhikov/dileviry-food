@@ -1,3 +1,7 @@
+:root {
+    font-size: 10px;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -11,7 +15,7 @@ html {
 body {
     margin: 0;
     background: #ffffff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $main-font;
 }
 
 img {
@@ -28,12 +32,41 @@ ul {
     list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+}
+
 .is-hidden {
     display: none;
 }
 
 .container {
-    min-width: 1200px;
+    display: flex;
+    width: 1230px;
     padding: 0px 20px;
     margin: 0px auto;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1350px) {
+    .container {
+        width: 980px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        width: 750px;
+    }
 }

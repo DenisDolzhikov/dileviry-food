@@ -8,7 +8,9 @@
   },
   "author": "MaxGraph",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "swiper": "^6.1.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.10.4",

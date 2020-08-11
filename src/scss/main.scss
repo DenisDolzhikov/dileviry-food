@@ -4,5 +4,10 @@
 @import "vendor";
 @import "settings";
 
-@import "./components/header";
-@import "./components/home-page";
+@import "./components/sticky-nav";
+@import "./components/home-header";
+@import "./components/logo";
+@import "./components/restaurants-section";
+@import "./components/footer";
+
+@import '../../node_modules/swiper/swiper-bundle.min.css';

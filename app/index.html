@@ -11,19 +11,217 @@
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-    <svg class='logo'>
-    <use xlink:href='img/sprite.svg#vk'></use>
-</svg>
 
-Хей хей
+    <div class="sticky-nav">
+    <div class="sticky-nav__container container">
+        <a class="sticky-nav__logo logo" href="#">
+            <svg class="logo__svg">
+                <use xlink:href="img/sprite.svg#icon--logo"></use>
+            </svg>
+        </a>
 
+        <label class="search-address">
+            <input class="search-address__input" type="text" placeholder="Адрес доставки">
+        </label>
 
-    <svg class="">
-		<use xlink:href="img/sprite.svg#icon--logo"></use>
-    </svg>
+        <div class="button">
+            <button class="button__auth button__auth--primary">Войти</button>
+            <button class="button__cart">Корзина</button>
+            <button class="button__out button__auth--primary">Выйти</button>
+        </div>
+    </div>
+</div>
+
     
-    Привет, Вася
-    
+    <header class="header">
+    <div class="container">
+
+        <div class="header__slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-1">
+                    <h2 class="header__title">Онлайн-сервис 
+                        доставки еды на дом</h2>
+                    <p class="header__description">Блюда из любимого ресторана привезет 
+                        курьер в перчатках, маске и с антисептиком</p>
+                </div>
+                
+                <div class="swiper-slide swiper-slide-2">
+                    <h2 class="header__title">Онлайн-сервис 
+                        доставки еды на дом</h2>
+                    <p class="header__description">Блюда из любимого ресторана привезет 
+                        курьер в перчатках, маске и с антисептиком</p>
+                </div>
+
+                <div class="swiper-slide swiper-slide-3">
+                    <h2 class="header__title">Онлайн-сервис 
+                        доставки еды на дом</h2>
+                    <p class="header__description">Блюда из любимого ресторана привезет 
+                        курьер в перчатках, маске и с антисептиком</p>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+</header>
+
+    <main class="home-main">
+      <section class="restaurants">
+    <div class="restaurants__container container">
+        <header class="restaurants__header">
+            <h1 class="restaurants__header-title">Рестораны</h1>
+
+            <label class="restaurants__search">
+                <input class="restaurants__search-input" type="text" placeholder="Поиск блюд и ресторанов">
+            </label>
+        </header>
+
+        <ul class="restaurants__cards">
+            <li class="restaurants__card restaurants__card-1">
+                <a href="" class="restaurants__card-link">
+                    <div class="restaurants__card-img-container">
+                        <img class="restaurants__card-img" src="../img/pizza-plus/preview.jpg" alt="Pizza plus">
+                    </div>
+                    <div class="restaurants__card-text">
+                        <div class="restaurants__card-text-heading">
+                            <h3 class="restaurants__card-text-heading-title">Пицца плюс</h3>
+                            <span class="restaurants__card-text-heading-preparation">50 мин</span>
+                        </div>
+                        <div class="restaurants__card-text-info">
+                            <div class="restaurants__card-text-info-rating">4.5</div>
+                            <div class="restaurants__card-text-info-price">От 900 ₽</div>
+                            <div class="restaurants__card-text-info-category">Пицца</div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            
+            <li class="restaurants__card restaurants__card-2">
+                <a href="" class="restaurants__card-link">
+                    <div class="restaurants__card-img-container">
+                        <img class="restaurants__card-img" src="../img/tanuki/preview.jpg" alt="Pizza plus">
+                    </div>
+                    <div class="restaurants__card-text">
+                        <div class="restaurants__card-text-heading">
+                            <h3 class="restaurants__card-text-heading-title">Тануки</h3>
+                            <span class="restaurants__card-text-heading-preparation">60 мин</span>
+                        </div>
+                        <div class="restaurants__card-text-info">
+                            <div class="restaurants__card-text-info-rating">4.5</div>
+                            <div class="restaurants__card-text-info-price">От 1200 ₽</div>
+                            <div class="restaurants__card-text-info-category">Суши, роллы</div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li class="restaurants__card restaurants__card-3">
+                <a href="" class="restaurants__card-link">
+                    <div class="restaurants__card-img-container">
+                        <img class="restaurants__card-img" src="../img/food-band/preview.jpg" alt="Pizza plus">
+                    </div>
+                    <div class="restaurants__card-text">
+                        <div class="restaurants__card-text-heading">
+                            <h3 class="restaurants__card-text-heading-title">FoodBand</h3>
+                            <span class="restaurants__card-text-heading-preparation">40 мин</span>
+                        </div>
+                        <div class="restaurants__card-text-info">
+                            <div class="restaurants__card-text-info-rating">4.5</div>
+                            <div class="restaurants__card-text-info-price">От 450 ₽</div>
+                            <div class="restaurants__card-text-info-category">Пицца</div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li class="restaurants__card restaurants__card-4">
+                <a href="" class="restaurants__card-link">
+                    <div class="restaurants__card-img-container">
+                        <img class="restaurants__card-img" src="../img/palki-skalki/preview.jpg" alt="Pizza plus">
+                    </div>
+                    <div class="restaurants__card-text">
+                        <div class="restaurants__card-text-heading">
+                            <h3 class="restaurants__card-text-heading-title">Палки скалки</h3>
+                            <span class="restaurants__card-text-heading-preparation">55 мин</span>
+                        </div>
+                        <div class="restaurants__card-text-info">
+                            <div class="restaurants__card-text-info-rating">4.5</div>
+                            <div class="restaurants__card-text-info-price">От 500 ₽</div>
+                            <div class="restaurants__card-text-info-category">Пицца</div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li class="restaurants__card restaurants__card-5">
+                <a href="" class="restaurants__card-link">
+                    <div class="restaurants__card-img-container">
+                        <img class="restaurants__card-img" src="../img/gusi-lebedi/preview.jpg" alt="Pizza plus">
+                    </div>
+                    <div class="restaurants__card-text">
+                        <div class="restaurants__card-text-heading">
+                            <h3 class="restaurants__card-text-heading-title">Гуси Лебеди</h3>
+                            <span class="restaurants__card-text-heading-preparation">75 мин</span>
+                        </div>
+                        <div class="restaurants__card-text-info">
+                            <div class="restaurants__card-text-info-rating">4.5</div>
+                            <div class="restaurants__card-text-info-price">От 1000 ₽</div>
+                            <div class="restaurants__card-text-info-category">Русская кухня</div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li class="restaurants__card restaurants__card-6">
+                <a href="" class="restaurants__card-link">
+                    <div class="restaurants__card-img-container">
+                        <img class="restaurants__card-img" src="../img/pizza-burger/preview.jpg" alt="Pizza plus">
+                    </div>
+                    <div class="restaurants__card-text">
+                        <div class="restaurants__card-text-heading">
+                            <h3 class="restaurants__card-text-heading-title">PizzaBurger</h3>
+                            <span class="restaurants__card-text-heading-preparation">45 мин</span>
+                        </div>
+                        <div class="restaurants__card-text-info">
+                            <div class="restaurants__card-text-info-rating">4.5</div>
+                            <div class="restaurants__card-text-info-price">От 700 ₽</div>
+                            <div class="restaurants__card-text-info-category">Пицца</div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+    </main>
+
+    <footer class="footer">
+    <div class="footer__container container">
+        <a class="footer__logo logo" href="#">
+            <svg class="logo__svg">
+                <use xlink:href="img/sprite.svg#icon--logo"></use>
+            </svg>
+        </a>
+
+        <nav class="footer__menu">
+            <ul class="footer__menu-list">
+                <li class="footer__menu-list-item"><a class="footer__menu-list-item-link" href="#">Ресторанам</a></li>
+                <li class="footer__menu-list-item"><a class="footer__menu-list-item-link" href="#">Курьерам</a></li>
+                <li class="footer__menu-list-item"><a class="footer__menu-list-item-link" href="#">Пресс центр</a></li>
+                <li class="footer__menu-list-item"><a class="footer__menu-list-item-link" href="#">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <nav class="footer__social-bar">
+            <ul class="footer__social-bar-list">
+                <li class="footer__social-bar-list-item"><a class="footer__social-bar-list-item-link footer__social-bar-list-item-link--inst" href="#"></a></li>
+                <li class="footer__social-bar-list-item"><a class="footer__social-bar-list-item-link footer__social-bar-list-item-link--fb" href="#"></a></li>
+                <li class="footer__social-bar-list-item footer__social-bar-list-item--last"><a class="footer__social-bar-list-item-link footer__social-bar-list-item-link--vk" href="#"></a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
 
     <script src="js/main.js"></script>
 </body>
