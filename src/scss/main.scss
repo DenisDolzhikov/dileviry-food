@@ -1,13 +1,24 @@
+//Basics
 @import "mixins";
 @import "fonts";
 @import "vars";
 @import "vendor";
 @import "settings";
 
+//Components
+@import "./components/logo";
+@import "./components/button";
+@import "./components/rating";
+@import "./components/search-address";
+
+//Sections
 @import "./components/sticky-nav";
 @import "./components/home-header";
-@import "./components/logo";
 @import "./components/restaurants-section";
+@import "./components/pizza-plus";
+@import "./components/assortment";
 @import "./components/footer";
+
+
 
 @import '../../node_modules/swiper/swiper-bundle.min.css';

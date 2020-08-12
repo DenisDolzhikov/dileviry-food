@@ -1,0 +1,54 @@
+.assortment__container {
+    flex-direction: column;
+}
+
+.assortment__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.assortment__header-title {
+    font-size: 3.6rem;
+    margin-right: 35px;
+}
+
+.assortment__start-price,
+.assortment__category {
+    font-size: 1.6rem;
+    color: #8c8c8c;
+}
+
+.assortment__start-price {
+    margin-right: 32px;
+}
+
+.assortment__card-img-container {
+    overflow: hidden;
+    height: 250px;
+}
+
+.assortment__card-img {
+    object-fit: cover;
+    height: 250px;
+}
+
+.assortment__cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.assortment__card {
+    flex-basis: 31%;
+}
+
+.assortment__card--2,
+.assortment__card--5 {
+    margin: auto;
+}
+
+.assortment__card-info-title {
+    font-size: 2.2rem;
+    color: #111111;
+    opacity: 0.85;
+}

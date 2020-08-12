@@ -1,8 +1,8 @@
-.header {
+.home-header {
     margin-top: 40px;
 }
 
-.header__slider {
+.home-header__slider {
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -35,24 +35,65 @@
     }
 }
 
-.header__title {
+.home-header__title {
     font-size: 3.9rem;
     white-space: pre-line;
     margin-bottom: 30px;
 }
 
-.header__description {
+.home-header__description {
     font-size: 2.4rem;
     white-space: pre-line;
 }
 
 
 @media only screen and (max-width: 1000px) {
-    .header__slider {
+    .home-header__slider {
         .swiper-slide {
             background-position: center right -200px;
             background-size: 500px;
             padding: 65px 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .home-header__container {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home-header__slider {
+        .swiper-slide {
+            background-image: none;
+            background: rgb(255,241,184);
+            background: linear-gradient(90deg, rgba(255,241,184,1) 0%, rgba(254,224,101,1) 100%);
+        }
+    }
+
+    .home-header__description {
+        white-space: normal;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .home-header__title {
+        white-space: normal;
+        font-size: 3.5rem;
+    }
+
+    .home-header__description {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .home-header__slider {
+        .swiper-slide {
+            padding-left: 25px;
+            padding-right: 25px;
         }
     }
 }

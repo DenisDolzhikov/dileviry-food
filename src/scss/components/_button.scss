@@ -1,0 +1,43 @@
+.button {
+    display: flex;
+}
+
+.button__auth,
+.button__cart,
+.button__out {
+    width: 104px;
+    height: 41px;
+    background: #1990ff;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: .3s;
+
+    &:hover {
+        background: #ffffff;
+        color: #111111;
+        border: 1px solid rgba(0,0,0, .3);
+    }
+}
+
+.button__cart,
+.button__out {
+    display: none;
+}
+
+.button__auth,
+.button__cart {
+    padding-left: 25px;
+}
+
+.button__cart {
+    width: 120px;
+    background: #ffffff;
+    color: #111111;
+    border: 1px solid rgba(0,0,0, .3);
+
+    &:hover {
+        background: #1990ff;
+        color: #ffffff;
+    }
+}

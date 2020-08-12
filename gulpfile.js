@@ -88,7 +88,7 @@ const MAKE_STYLES = () => {
 }
 
 const HTML_INCLUDE = () => {
-	return src(['./src/index.html'])
+	return src(['./src/*.html'])
 		.pipe(FILE_INCLUDE({
 			prefix: '@',
 			basepath: '@file'
@@ -164,7 +164,7 @@ const WATCH_FILES = () => {
 	});
 
 	watch('./src/scss/**/*.scss', MAKE_STYLES);
-	watch('./src/index.html', HTML_INCLUDE);
+	watch('./src/*.html', HTML_INCLUDE);
 	watch('./src/html/**.html', HTML_INCLUDE);
 	watch('./src/img/**.jpg', IMG_TO_APP);
 	watch('./src/img/**.png', IMG_TO_APP);

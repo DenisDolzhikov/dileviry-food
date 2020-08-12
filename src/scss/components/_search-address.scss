@@ -1,0 +1,28 @@
+.search-address {
+    position: relative;
+    width: 65.5%;
+
+    &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 11px;
+        width: 20px;
+        height: 20px;
+        background: url('../img/sprite.svg#icon--home') 0 0/19px no-repeat;
+        z-index: 1;
+    }
+}
+
+.search-address__input {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 41px;
+    padding-top: 5px;
+    padding-left: 35px;
+    padding-right: 15px;
+    border: 1px solid #d9d9d9;
+}
