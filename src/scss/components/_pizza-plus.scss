@@ -16,3 +16,37 @@
         margin-left: 10px;
     }
 }
+
+@media only screen and (max-width: 1350px) {
+    .pizza-plus__search-address {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .pizza-plus__logo {
+        margin-right: 4%;
+    }
+
+    .pizza-plus__search-address {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .pizza-plus__sticky-nav {
+        .sticky-nav__container {
+            flex-wrap: wrap;
+        }
+    }
+
+    .pizza-plus__search-address {
+        width: 100%;
+        margin: auto;
+        order: 1;
+    }
+
+    .pizza-plus__logo {
+        margin-bottom: 30px;
+    }
+}

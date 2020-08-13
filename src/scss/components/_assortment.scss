@@ -5,7 +5,7 @@
 .assortment__header {
     display: flex;
     align-items: center;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
 }
 
 .assortment__header-title {
@@ -23,16 +23,6 @@
     margin-right: 32px;
 }
 
-.assortment__card-img-container {
-    overflow: hidden;
-    height: 250px;
-}
-
-.assortment__card-img {
-    object-fit: cover;
-    height: 250px;
-}
-
 .assortment__cards {
     display: flex;
     flex-wrap: wrap;
@@ -40,15 +30,144 @@
 
 .assortment__card {
     flex-basis: 31%;
+    margin-bottom: 32px;
+    border-radius: 7px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: box-shadow .5s;
+
+    &:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
 }
 
 .assortment__card--2,
 .assortment__card--5 {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.assortment__card-img-container {
+    overflow: hidden;
+    height: 250px;
+    margin-bottom: 25px;
+}
+
+.assortment__card-img {
+    object-fit: cover;
+    height: 250px;
+    transition: transform .5s;
+}
+
+.assortment__card:hover .assortment__card-img {
+    transform: rotate(4deg) scale(1.3);
+}
+
+.assortment__card-info {
+    height: 173px;
+}
+
+.assortment__card-info,
+.assortment__card-buttons {
+    padding: 0px 23px;
 }
 
 .assortment__card-info-title {
     font-size: 2.2rem;
     color: #111111;
     opacity: 0.85;
+    margin-bottom: 15px;
+}
+
+.assortment__card-info-ingredients {
+    font-size: 1.8rem;
+    color: #8c8c8c;
+}
+
+.assortment__card-buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.assortment__button {
+    margin-right: 38px;
+
+    .button__add-cart {
+        display: block;
+    }
+}
+
+.assortment__card-price {
+    font-size: 2rem;
+    color: #111111;
+    margin-top: 9px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .assortment__card {
+        flex-basis: 49%;
+    }
+    
+    .assortment__card--2 {
+        margin-right: 0;
+    }
+
+    .assortment__card--2,
+    .assortment__card--5 {
+        margin-left: 0;
+    }
+
+    .assortment__card--1,
+    .assortment__card--3 {
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .assortment__card {
+        flex-basis: 100%;
+    }
+
+    .assortment__card--1,
+    .assortment__card--2,
+    .assortment__card--3,
+    .assortment__card--5 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .assortment__header {
+        flex-wrap: wrap;
+    }
+
+    .assortment__header-title {
+        font-size: 2rem;
+        width: 100%;
+        margin-bottom: 17px;
+    }
+
+    .assortment__start-price,
+    .assortment__category {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .assortment__card-info,
+    .assortment__card-buttons {
+        padding: 0px 15px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .assortment__card-buttons {
+        justify-content: space-between;
+    }
+
+    .assortment__button {
+        margin-right: 0;
+    }
 }

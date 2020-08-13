@@ -1,10 +1,13 @@
 .button {
     display: flex;
+    font-size: 1.6rem;
 }
 
 .button__auth,
 .button__cart,
-.button__out {
+.button__out,
+.button__add-cart {
+    position: relative;
     width: 104px;
     height: 41px;
     background: #1990ff;
@@ -13,6 +16,19 @@
     border-radius: 2px;
     transition: .3s;
 
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 9px;
+        width: 24px;
+        height: 24px;
+        background: red;
+        z-index: 1;
+    }
+
     &:hover {
         background: #ffffff;
         color: #111111;
@@ -20,7 +36,14 @@
     }
 }
 
+.button__auth {
+    &::before {
+        background: url('../img/sprite.svg#icon--user') 0/100% no-repeat;
+    }
+}
+
 .button__cart,
+.button__add-cart,
 .button__out {
     display: none;
 }
@@ -36,8 +59,39 @@
     color: #111111;
     border: 1px solid rgba(0,0,0, .3);
 
+    &::before {
+        background: url('../img/sprite.svg#icon--shopping-cart') 0/100% no-repeat;
+    }
+
     &:hover {
         background: #1990ff;
         color: #ffffff;
+    }
+}
+
+.button__add-cart {
+    width: 143px;
+    padding-left: 17px;
+    text-align: start;
+
+    &::before {
+        left: initial;
+        right: 20px;
+        background: url('../img/sprite.svg#icon--shopping-cart-white') 0/100% no-repeat;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .button__auth,
+    .button__cart,
+    .button__out {
+        width: initial;
+        padding-right: 16px;
+    }
+
+    .button__auth-text,
+    .button__cart-text,
+    .button__out-text {
+        display: none;
     }
 }

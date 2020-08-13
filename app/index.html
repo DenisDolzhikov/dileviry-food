@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Here is description">
-    <meta name="keywords" content="Here is keywords">
+    <meta name="description" content="Delivery Food home page">
+    <meta name="keywords" content="Delivery, Food, Denis, Dolzhikov, homepage">
     <meta name="author" content="Denis Dolzhikov">
-    <title>About us</title>
+    <title>Delivery Food</title>
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
 
     <div class="sticky-nav">
     <div class="sticky-nav__container container">
-        <a class="logo sticky-nav__logo" href="#">
+        <a class="logo sticky-nav__logo" href="index.html">
             <svg class="logo__svg">
                 <use xlink:href="img/sprite.svg#icon--logo"></use>
             </svg>
@@ -25,9 +25,18 @@
         </label>
 
         <div class="button sticky-nav__button">
-            <button class="button__auth button__auth--primary">Войти</button>
-            <button class="button__cart">Корзина</button>
-            <button class="button__out button__auth--primary">Выйти</button>
+            <button class="button__auth button__auth--primary">
+                <span class="button__auth-text">Войти</span>
+                <div class="button__auth-svg"></div>
+            </button>
+            <button class="button__cart">
+                <span class="button__cart-text">Корзина</span>
+                <div class="button__cart-svg"></div>
+            </button>
+            <button class="button__out button__auth--primary">
+                <span class="button__out-text">Выйти</span>
+                <div class="button__out-svg"></div>
+            </button>
         </div>
     </div>
 </div>
@@ -39,23 +48,23 @@
         <div class="home-header__slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide swiper-slide-1">
-                    <h2 class="home-header__title">Онлайн-сервис 
+                    <h2 class="home-header__title" data-swiper-parallax-opacity="-0.5">Онлайн-сервис 
                         доставки еды на дом</h2>
-                    <p class="home-header__description">Блюда из любимого ресторана привезет 
+                    <p class="home-header__description" data-swiper-parallax-opacity="-0.5">Блюда из любимого ресторана привезет 
                         курьер в перчатках, маске и с антисептиком</p>
                 </div>
                 
                 <div class="swiper-slide swiper-slide-2">
-                    <h2 class="home-header__title">Онлайн-сервис 
+                    <h2 class="home-header__title" data-swiper-parallax-opacity="-0.5">Онлайн-сервис 
                         доставки еды на дом</h2>
-                    <p class="home-header__description">Блюда из любимого ресторана привезет 
+                    <p class="home-header__description" data-swiper-parallax-opacity="-0.5">Блюда из любимого ресторана привезет 
                         курьер в перчатках, маске и с антисептиком</p>
                 </div>
 
                 <div class="swiper-slide swiper-slide-3">
-                    <h2 class="home-header__title">Онлайн-сервис 
+                    <h2 class="home-header__title" data-swiper-parallax-opacity="-0.5">Онлайн-сервис 
                         доставки еды на дом</h2>
-                    <p class="home-header__description">Блюда из любимого ресторана привезет 
+                    <p class="home-header__description" data-swiper-parallax-opacity="-0.5">Блюда из любимого ресторана привезет 
                         курьер в перчатках, маске и с антисептиком</p>
                 </div>
             </div>
@@ -98,9 +107,9 @@
             </li>
             
             <li class="restaurants__card restaurants__card--2">
-                <a href="" class="restaurants__card-link">
+                <a href="tanuki.html" class="restaurants__card-link">
                     <div class="restaurants__card-img-container">
-                        <img class="restaurants__card-img" src="../img/tanuki/preview.jpg" alt="Pizza plus">
+                        <img class="restaurants__card-img" src="../img/tanuki/preview.jpg" alt="Tanuki">
                     </div>
                     <div class="restaurants__card-text">
                         <div class="restaurants__card-text-heading">
@@ -117,9 +126,9 @@
             </li>
 
             <li class="restaurants__card restaurants__card--3">
-                <a href="" class="restaurants__card-link">
+                <a href="foodband.html" class="restaurants__card-link">
                     <div class="restaurants__card-img-container">
-                        <img class="restaurants__card-img" src="../img/food-band/preview.jpg" alt="Pizza plus">
+                        <img class="restaurants__card-img" src="../img/food-band/preview.jpg" alt="Food band">
                     </div>
                     <div class="restaurants__card-text">
                         <div class="restaurants__card-text-heading">
@@ -136,9 +145,9 @@
             </li>
 
             <li class="restaurants__card restaurants__card--4">
-                <a href="" class="restaurants__card-link">
+                <a href="palki-skalki.html" class="restaurants__card-link">
                     <div class="restaurants__card-img-container">
-                        <img class="restaurants__card-img" src="../img/palki-skalki/preview.jpg" alt="Pizza plus">
+                        <img class="restaurants__card-img" src="../img/palki-skalki/preview.jpg" alt="Palki skalki">
                     </div>
                     <div class="restaurants__card-text">
                         <div class="restaurants__card-text-heading">
@@ -155,9 +164,9 @@
             </li>
 
             <li class="restaurants__card restaurants__card--5">
-                <a href="" class="restaurants__card-link">
+                <a href="gusi-lebedi.html" class="restaurants__card-link">
                     <div class="restaurants__card-img-container">
-                        <img class="restaurants__card-img" src="../img/gusi-lebedi/preview.jpg" alt="Pizza plus">
+                        <img class="restaurants__card-img" src="../img/gusi-lebedi/preview.jpg" alt="Gusi lebedi">
                     </div>
                     <div class="restaurants__card-text">
                         <div class="restaurants__card-text-heading">
@@ -174,9 +183,9 @@
             </li>
 
             <li class="restaurants__card restaurants__card--6">
-                <a href="" class="restaurants__card-link">
+                <a href="pizza-burger.html" class="restaurants__card-link">
                     <div class="restaurants__card-img-container">
-                        <img class="restaurants__card-img" src="../img/pizza-burger/preview.jpg" alt="Pizza plus">
+                        <img class="restaurants__card-img" src="../img/pizza-burger/preview.jpg" alt="Pizza burger">
                     </div>
                     <div class="restaurants__card-text">
                         <div class="restaurants__card-text-heading">

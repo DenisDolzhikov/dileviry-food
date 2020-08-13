@@ -100,18 +100,18 @@ const HTML_INCLUDE = () => {
 const CONVERT_WEBP = () => {
 	return src(['./src/img/**/*.jpg', './src/img/**/*.png', './src/img/**/*.jpeg'])
 		.pipe(WEBP({
-			quality: 70
+			quality: 100
 		}))
 		.pipe(dest('./app/img'))
 }
 
 const IMG_TO_APP = () => {
 	return src(['./src/img/**/*.jpg', './src/img/**/*.png', './src/img/**/*.jpeg'])
-		.pipe(IMAGE_MIN({
+	/*	.pipe(IMAGE_MIN({
 			progressive: true,
 			interlaced: true,
-			optimizationLevel: 3
-		}))
+			optimizationLevel: 0
+		})) */
 		.pipe(dest('./app/img'))
 }
 
